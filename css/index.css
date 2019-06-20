@@ -135,7 +135,6 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: red;
 }
 h1,
 h2,
@@ -169,6 +168,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navigationContainer {
+  margin: 0px 30px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  width: 80%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -179,6 +185,9 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.title {
+  margin: 10px 0 20px 200px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -225,7 +234,4 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-html {
-  background: red;
 }
