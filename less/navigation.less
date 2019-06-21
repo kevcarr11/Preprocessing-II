@@ -1,1 +1,43 @@
 // Navigation Styles here
+
+
+.navContainer{
+    .flex(space-between, center);
+    padding-bottom: 2%;
+    padding-top: 2%;
+    width: 100%;
+
+    @media(max-width: 500px){
+        flex-direction: column;
+        
+
+
+    }
+        .title{
+        width: 30%;
+        
+    }
+
+    nav{
+        width: 45%;
+        font-size: 1.5rem;
+        .flex(space-between, center);
+
+        @media(max-width: 500px){
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        
+
+            a{
+                text-decoration: none;
+                justify-content: space-between;
+                color: black;
+
+            }
+
+
+        }
+
+    }
