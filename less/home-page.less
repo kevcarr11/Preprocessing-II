@@ -2,6 +2,10 @@
 
 header{ 
   width: 100%;
+
+  @media(max-width: 500px){
+    width: 80%;
+  }
   
 
   
@@ -9,11 +13,15 @@ header{
     display: flex;
     justify-content: center;
     border-top: 2px dashed @navigation-border;
+
+    @media(max-width: 500px){
+      width: 50%;
+    }
     
       img{
         border-radius: 10px;
         margin-bottom: 2%;
-        
+
       }
     }
 }
@@ -26,16 +34,31 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media(max-width: 500px){
+    border-top: 2px dashed @navigation-border;
+    padding-top: 30px;
+    flex-direction: column;
     
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media(max-width: 500px){
+        width: 80%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media(max-width: 500px){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
 
       img {
         border-radius: 10px;
@@ -47,6 +70,12 @@ header{
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media(max-width: 500px){
+      display: flex;
+      flex-direction: column-reverse;
+      padding-left: 50px; 
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -56,11 +85,15 @@ header{
       padding-right: 1%;
       padding-left: 0;
     }
-  }
+  
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media(max-width: 500px){
+      width: 80%;
+    }
 
     img {
       border-radius: 10px;
@@ -73,20 +106,23 @@ header{
     display: flex;
     justify-content: space-between;
 
+    @media(max-width: 500px){
+      padding-left: 50px; 
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media(max-width: 500px){
+        width: 75%;
+      }
 
         .btn{
           .buttonShaper(100%, 35px, 2rem, @eastern-blue, 10px, center, center, white);
           
         }
+      }
     }
-  }
-  
-          
-    
-  
-
-      
-}// home
+  }      
+ } // home
